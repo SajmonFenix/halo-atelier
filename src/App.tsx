@@ -118,8 +118,8 @@ function BrandStory() {
           </h2>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-          <div className="max-w-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
+          <div className="max-w-xl md:border-r md:border-[#B8976A] md:pr-16">
             <FadeIn delay={0.2}><Divider /></FadeIn>
             <FadeIn delay={0.3}>
               <p className="font-sans text-base md:text-lg leading-[1.8] text-halo-text/85 mt-10">
@@ -151,7 +151,7 @@ function BrandStory() {
           </div>
 
           <FadeIn delay={0.3}>
-            <div className="relative">
+            <div className="relative md:pl-16">
               <img
                 src="/images/generated-1780910628869.png"
                 alt="Halo Atelier story"
@@ -223,9 +223,9 @@ function Philosophy() {
         <FadeIn>
           <p className="font-sans text-xs tracking-editorial uppercase text-[#B8976A] mb-12 text-center font-normal">Filozofia</p>
         </FadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
           <FadeIn>
-            <div className="relative">
+            <div className="relative md:border-r md:border-[#B8976A] md:pr-16">
               <img
                 src="/images/generated-1780910628869.png"
                 alt="Halo Atelier filozofia"
@@ -234,7 +234,7 @@ function Philosophy() {
             </div>
           </FadeIn>
 
-          <div>
+          <div className="md:pl-16">
             <FadeIn delay={0.1}>
               <blockquote className="font-serif text-2xl md:text-3xl text-halo-text leading-[1.2] mb-12">
                 Krása tu nevzniká nátlakom. Vzniká v tichu, v pozornosti a v rozhodnutí cítiť sa opäť ako žena.
