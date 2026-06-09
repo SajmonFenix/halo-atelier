@@ -233,7 +233,7 @@ function Philosophy() {
 
           <div>
             <FadeIn>
-              <p className="font-sans text-xs tracking-editorial uppercase text-halo-text mb-6 font-normal">Filozofia</p>
+              <p className="font-sans text-xs tracking-editorial uppercase text-halo-text mb-6 text-center font-normal">Filozofia</p>
             </FadeIn>
             <FadeIn delay={0.1}>
               <blockquote className="font-serif text-2xl md:text-3xl text-halo-text leading-[1.2] mb-12">
