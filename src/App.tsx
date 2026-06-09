@@ -11,6 +11,7 @@ import { CartPage } from './components/CartPage';
 import { CheckoutPage } from './components/CheckoutPage';
 import { ShoppingCart } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 type View = 'home' | 'shop' | 'product' | 'cart' | 'checkout';
 
@@ -526,6 +527,7 @@ function AppInner() {
       )}
 
       <Analytics />
+      <SpeedInsights />
 
       <MiniCart
         open={miniCartOpen}
