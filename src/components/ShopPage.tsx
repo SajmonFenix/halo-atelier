@@ -12,7 +12,7 @@ export function ShopPage({ onQuickView, onViewProduct, onAddedToCart }: ShopPage
     <section className="py-32 md:py-44 px-6 bg-halo-section min-h-screen">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 md:mb-20">
-          <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-4">Obchod</p>
+          <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-4 font-normal">Obchod</p>
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-halo-text leading-[1.2] mb-4">
             Každý kus ako šperk.
           </h1>

@@ -109,7 +109,7 @@ function BrandStory() {
     <section id="pribeh" className="py-24 md:py-36 px-6 bg-halo-bg">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <div className="text-center mb-8"><div className="inline-block bg-[#4A403A]/30 px-6 py-2"><p className="font-sans text-xs tracking-editorial uppercase text-[#4A403A]">Náš príbeh</p></div></div>
+          <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-8 text-center font-normal">Náš príbeh</p>
         </FadeIn>
 
         <FadeIn delay={0.1}>
@@ -178,7 +178,7 @@ function ProductsSection({ onQuickView, onViewProduct, onViewAll, onAddedToCart 
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <div className="text-center mb-16 md:mb-24">
-            <div className="inline-block bg-[#4A403A] px-6 py-2 mb-4"><p className="font-sans text-xs tracking-editorial uppercase text-[#FAF7F4]">Kolekcia</p></div>
+            <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-4 font-normal">Kolekcia</p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-halo-text leading-[1.2] mb-4">
               Každý kus ako šperk.
             </h2>
@@ -233,7 +233,7 @@ function Philosophy() {
 
           <div>
             <FadeIn>
-              <div className="inline-block bg-[#4A403A] px-6 py-2 mb-6"><p className="font-sans text-xs tracking-editorial uppercase text-[#FAF7F4]">Filozofia</p></div>
+              <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-6 font-normal">Filozofia</p>
             </FadeIn>
             <FadeIn delay={0.1}>
               <blockquote className="font-serif text-2xl md:text-3xl text-halo-text leading-[1.2] mb-12">
@@ -263,7 +263,7 @@ function ForWhom() {
     <section id="pre-koho" className="py-24 md:py-36 px-6 bg-halo-section">
       <div className="max-w-[72rem] mx-auto text-center p-10 md:p-16">
         <FadeIn>
-          <div className="inline-block bg-[#4A403A] px-6 py-2 mb-8"><p className="font-sans text-xs tracking-editorial uppercase text-[#FAF7F4]">Pre koho</p></div>
+          <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-8 text-center font-normal">Pre koho</p>
         </FadeIn>
         <FadeIn delay={0.1}>
           <div className="bg-[#FAF7F4] p-8 md:p-10 mb-8 md:mb-10">
