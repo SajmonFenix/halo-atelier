@@ -104,7 +104,7 @@ function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
 
 function BrandStory() {
   return (
-    <section id="pribeh" className="py-24 md:py-36 px-6 bg-halo-bg">
+    <section id="pribeh" className="py-20 px-6 bg-halo-bg">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <p className="font-sans text-xs tracking-editorial uppercase text-[#B8976A] mb-8 text-center font-normal">Náš príbeh</p>
@@ -173,7 +173,7 @@ interface ProductsSectionProps {
 
 function ProductsSection({ onQuickView, onViewProduct, onViewAll, onAddedToCart }: ProductsSectionProps) {
   return (
-    <section id="kolekcia" className="py-24 md:py-36 px-6 bg-halo-section">
+    <section id="kolekcia" className="py-20 px-6 bg-halo-section">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <div className="text-center mb-16 md:mb-24">
@@ -217,7 +217,7 @@ function ProductsSection({ onQuickView, onViewProduct, onViewAll, onAddedToCart 
 
 function Philosophy() {
   return (
-    <section id="filozofia" className="py-24 md:py-36 px-6 bg-halo-bg">
+    <section id="filozofia" className="py-20 px-6 bg-halo-bg">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <p className="font-sans text-xs tracking-editorial uppercase text-[#B8976A] mb-12 text-center font-normal">Filozofia</p>
@@ -260,7 +260,7 @@ function Philosophy() {
 
 function ForWhom() {
   return (
-    <section id="pre-koho" className="py-24 md:py-36 px-6 bg-halo-section">
+    <section id="pre-koho" className="py-20 px-6 bg-halo-section">
       <div className="max-w-[72rem] mx-auto text-center p-10 md:p-16">
         <FadeIn>
           <p className="font-sans text-xs tracking-editorial uppercase text-[#B8976A] mb-8 text-center font-normal">Pre koho</p>

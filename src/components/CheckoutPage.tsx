@@ -65,7 +65,7 @@ export function CheckoutPage({ onBack }: CheckoutPageProps) {
 
   if (placed) {
     return (
-      <section className="py-24 md:py-36 px-6 bg-halo-section min-h-screen flex items-center justify-center">
+      <section className="py-20 px-6 bg-halo-section min-h-screen flex items-center justify-center">
         <div className="max-w-md mx-auto text-center">
           <div className="w-16 h-16 rounded-full bg-[#4A403A] flex items-center justify-center mx-auto mb-6">
             <Check size={28} className="text-[#FAF7F4]" />
@@ -86,7 +86,7 @@ export function CheckoutPage({ onBack }: CheckoutPageProps) {
   }
 
   return (
-    <section className="py-24 md:py-36 px-6 bg-halo-section min-h-screen">
+    <section className="py-20 px-6 bg-halo-section min-h-screen">
       <div className="max-w-5xl mx-auto">
         <button onClick={onBack} className="flex items-center gap-2 font-sans text-xs tracking-editorial uppercase text-halo-text/60 hover:text-halo-text transition-colors mb-8">
           <ArrowLeft size={14} />

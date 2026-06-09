@@ -12,7 +12,7 @@ export function CartPage({ onBack, onCheckout }: CartPageProps) {
 
   if (items.length === 0) {
     return (
-      <section className="py-24 md:py-36 px-6 bg-halo-section min-h-screen">
+      <section className="py-20 px-6 bg-halo-section min-h-screen">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-serif text-3xl md:text-4xl font-medium text-halo-text mb-4">Košík</h1>
           <p className="font-sans text-sm text-halo-text/50 mb-8">Košík je prázdny.</p>
@@ -25,7 +25,7 @@ export function CartPage({ onBack, onCheckout }: CartPageProps) {
   }
 
   return (
-    <section className="py-24 md:py-36 px-6 bg-halo-section min-h-screen">
+    <section className="py-20 px-6 bg-halo-section min-h-screen">
       <div className="max-w-5xl mx-auto">
         <button onClick={onBack} className="flex items-center gap-2 font-sans text-xs tracking-editorial uppercase text-halo-text/60 hover:text-halo-text transition-colors mb-8">
           <ArrowLeft size={14} />

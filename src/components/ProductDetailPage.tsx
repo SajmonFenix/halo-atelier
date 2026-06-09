@@ -50,7 +50,7 @@ export function ProductDetailPage({ product, onBack, onAddedToCart }: ProductDet
 
   return (
     <section className="min-h-screen bg-halo-section">
-      <div className="max-w-6xl mx-auto px-6 py-24 md:py-36">
+      <div className="max-w-6xl mx-auto px-6 py-20">
         <button onClick={onBack} className="flex items-center gap-2 font-sans text-xs tracking-editorial uppercase text-halo-text/60 hover:text-halo-text transition-colors mb-8">
           <ArrowLeft size={14} />
           Späť do obchodu
