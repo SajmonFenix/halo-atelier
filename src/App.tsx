@@ -57,35 +57,48 @@ const values = [
 
 function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-[#F3EBE2]">
       <div className="absolute inset-0 z-0">
         <img
           src="/images/generated-1780910617720.png"
           alt="Editorial fashion"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-top opacity-85"
         />
-        <div className="absolute inset-0 bg-[#FAF7F4]/70" />
+        <div className="absolute inset-0 bg-[#F3EBE2]/30" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        <p className="animate-fadeInUp delay-400 font-serif text-4xl md:text-5xl italic text-halo-text/80 mb-6">
-          Všetko o žene takej, aká je.
-        </p>
+      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full py-32 md:py-0">
+        <div className="max-w-xl">
+          <p className="animate-fadeInUp delay-400 font-sans text-[11px] tracking-[4px] uppercase text-[#3D3D3D] mb-6">
+            Premium Wig House
+          </p>
 
-        <p className="animate-fadeInUp delay-500 font-sans text-sm md:text-base leading-[1.7] text-halo-text/70 max-w-lg mx-auto mb-10">
-          Prémiový ateliér parochní a vlasových diel — priestor, kde sa krása nesnaží, len je.
-        </p>
+          <h1 className="animate-fadeInUp delay-500 mb-6">
+            <span className="block font-serif text-5xl md:text-7xl font-normal leading-[1.0] text-[#4A403A]">
+              Všetko o žene
+            </span>
+            <span className="block font-serif text-5xl md:text-7xl font-normal italic leading-[1.0] text-[#4A403A]">
+              takej, aká je.
+            </span>
+          </h1>
 
-        <button
-          onClick={() => onNavigate('shop')}
-          className="animate-fadeInUp delay-600 inline-block font-sans text-xs tracking-editorial uppercase bg-halo-button text-halo-text px-10 py-4 hover:bg-halo-hover hover:text-white transition-colors duration-300"
-        >
-          Prejsť do obchodu
-        </button>
+          <div className="animate-fadeInUp delay-600 w-15 h-[1px] bg-[#C5BEB6] mb-6" />
+
+          <p className="animate-fadeInUp delay-700 font-sans text-base font-light leading-[1.6] text-[#3D3D3D] mb-10">
+            Prémiový ateliér parochní a vlasových diel — priestor, kde sa krása nesnaží, len je.
+          </p>
+
+          <button
+            onClick={() => onNavigate('shop')}
+            className="animate-fadeInUp delay-800 inline-block font-sans text-[11px] tracking-[3px] uppercase bg-[#4A403A] text-[#FAF7F4] px-8 py-4 hover:bg-[#3D3D3D] transition-colors duration-300"
+          >
+            Prejsť do obchodu
+          </button>
+        </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-fadeInUp delay-800">
-        <div className="w-px h-16 bg-halo-accent/50" />
+      <div className="absolute right-24 top-16 hidden lg:flex flex-col items-center gap-2 animate-fadeInUp delay-800">
+        <div className="w-px h-20 bg-[#C5BEB6]" />
       </div>
     </section>
   );
