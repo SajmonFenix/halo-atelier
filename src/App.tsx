@@ -10,6 +10,7 @@ import { MiniCart } from './components/MiniCart';
 import { CartPage } from './components/CartPage';
 import { CheckoutPage } from './components/CheckoutPage';
 import { ShoppingCart } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 type View = 'home' | 'shop' | 'product' | 'cart' | 'checkout';
 
@@ -523,6 +524,8 @@ function AppInner() {
       {view === 'checkout' && (
         <CheckoutPage onBack={() => navigate('shop')} />
       )}
+
+      <Analytics />
 
       <MiniCart
         open={miniCartOpen}
