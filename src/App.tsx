@@ -33,7 +33,7 @@ function FadeIn({ children, className = '', delay = 0 }: { children: React.React
 }
 
 const Divider = () => (
-  <span className="text-halo-accent text-lg tracking-editorial mx-2 select-none">&#10023; &#10023; &#10023;</span>
+  <span className="text-halo-text text-lg tracking-editorial mx-2 select-none">&#10023; &#10023; &#10023;</span>
 );
 
 const values = [
@@ -109,7 +109,7 @@ function BrandStory() {
     <section id="pribeh" className="py-24 md:py-36 px-6 bg-halo-bg">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-8 text-center font-normal">Náš príbeh</p>
+          <p className="font-sans text-xs tracking-editorial uppercase text-halo-text mb-8 text-center font-normal">Náš príbeh</p>
         </FadeIn>
 
         <FadeIn delay={0.1}>
@@ -144,7 +144,7 @@ function BrandStory() {
             </FadeIn>
             <FadeIn delay={0.8}><Divider /></FadeIn>
             <FadeIn delay={0.9}>
-              <p className="font-sans text-sm tracking-editorial uppercase text-halo-accent mt-10">
+              <p className="font-sans text-sm tracking-editorial uppercase text-halo-text mt-10">
                 S láskou a úctou k ženskosti. Halo Atelier.
               </p>
             </FadeIn>
@@ -178,7 +178,7 @@ function ProductsSection({ onQuickView, onViewProduct, onViewAll, onAddedToCart 
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <div className="text-center mb-16 md:mb-24">
-            <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-4 font-normal">Kolekcia</p>
+            <p className="font-sans text-xs tracking-editorial uppercase text-halo-text mb-4 font-normal">Kolekcia</p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-halo-text leading-[1.2] mb-4">
               Každý kus ako šperk.
             </h2>
@@ -233,7 +233,7 @@ function Philosophy() {
 
           <div>
             <FadeIn>
-              <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-6 font-normal">Filozofia</p>
+              <p className="font-sans text-xs tracking-editorial uppercase text-halo-text mb-6 font-normal">Filozofia</p>
             </FadeIn>
             <FadeIn delay={0.1}>
               <blockquote className="font-serif text-2xl md:text-3xl text-halo-text leading-[1.2] mb-12">
@@ -244,7 +244,7 @@ function Philosophy() {
               {values.map((value, i) => (
                 <FadeIn key={value.title} delay={0.2 + i * 0.08}>
                   <div>
-                    <p className="font-sans text-[10px] tracking-editorial uppercase text-halo-accent mb-2">0{i + 1}</p>
+                    <p className="font-sans text-[10px] tracking-editorial uppercase text-halo-text mb-2">0{i + 1}</p>
                     <h3 className="font-serif text-lg md:text-xl font-semibold text-halo-text mb-2">{value.title}</h3>
                     <p className="font-sans text-sm leading-[1.6] text-halo-text/60">{value.desc}</p>
                   </div>
@@ -263,7 +263,7 @@ function ForWhom() {
     <section id="pre-koho" className="py-24 md:py-36 px-6 bg-halo-section">
       <div className="max-w-[72rem] mx-auto text-center p-10 md:p-16">
         <FadeIn>
-          <p className="font-sans text-xs tracking-editorial uppercase text-halo-accent mb-8 text-center font-normal">Pre koho</p>
+          <p className="font-sans text-xs tracking-editorial uppercase text-halo-text mb-8 text-center font-normal">Pre koho</p>
         </FadeIn>
         <FadeIn delay={0.1}>
           <div className="bg-[#FAF7F4] p-8 md:p-10 mb-8 md:mb-10">
