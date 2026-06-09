@@ -88,19 +88,19 @@ export function ProductCard({ product, onQuickView, onViewProduct, onAddedToCart
           )}
         </div>
       </div>
-      <div className="px-1 mt-3 md:hidden flex flex-col gap-2">
+      <div className="px-1 mt-2 md:hidden flex flex-col gap-1.5">
         <button
           onClick={handleViewDetail}
-          className="w-full font-sans text-xs tracking-editorial uppercase bg-halo-text text-[#FAF7F4] py-3 hover:bg-halo-text/90 transition-colors duration-300"
+          className="w-full font-sans text-[10px] tracking-editorial uppercase bg-halo-text text-[#FAF7F4] py-2.5 hover:bg-halo-text/90 transition-colors duration-300"
         >
           Zobraziť detail
         </button>
         <button
           onClick={handleAdd}
           disabled={!inStock}
-          className="w-full font-sans text-xs tracking-editorial uppercase bg-halo-button text-halo-text py-3 hover:bg-halo-hover hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          className="w-full font-sans text-[10px] tracking-editorial uppercase bg-halo-button text-halo-text py-2.5 hover:bg-halo-hover hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
-          <ShoppingCart size={14} />
+          <ShoppingCart size={13} />
           {!inStock ? 'Vypredané' : added ? 'Pridané ✓' : 'Do košíka'}
         </button>
       </div>
