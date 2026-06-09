@@ -109,7 +109,7 @@ function BrandStory() {
     <section id="pribeh" className="py-24 md:py-36 px-6 bg-halo-bg">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <div className="inline-block bg-[#4A403A] px-6 py-2 mb-8"><p className="font-sans text-xs tracking-editorial uppercase text-[#FAF7F4]">Náš príbeh</p></div>
+          <div className="text-center mb-8"><div className="inline-block bg-[#4A403A]/30 px-6 py-2"><p className="font-sans text-xs tracking-editorial uppercase text-[#4A403A]">Náš príbeh</p></div></div>
         </FadeIn>
 
         <FadeIn delay={0.1}>
