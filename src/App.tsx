@@ -82,8 +82,6 @@ function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
             </span>
           </h1>
 
-          <div className="animate-fadeInUp delay-600 w-15 h-[1px] bg-[#C5BEB6] mb-6" />
-
           <p className="animate-fadeInUp delay-700 font-sans text-base font-normal leading-[1.6] text-[#3D3D3D] mb-10">
             Prémiový ateliér parochní a vlasových diel<br /> — priestor, kde sa krása nesnaží, len je.
           </p>
