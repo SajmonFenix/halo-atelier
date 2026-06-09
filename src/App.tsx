@@ -156,7 +156,7 @@ function BrandStory() {
               <img
                 src="/images/generated-1780910628869.png"
                 alt="Halo Atelier story"
-                className="w-full h-auto object-cover rounded-sm"
+                className="w-full h-[500px] md:h-[600px] object-cover rounded-sm"
               />
             </div>
           </FadeIn>
@@ -231,7 +231,7 @@ function Philosophy() {
               <img
                 src="/images/generated-1780910628869.png"
                 alt="Halo Atelier filozofia"
-                className="w-full h-auto object-cover"
+                className="w-full h-[500px] md:h-[600px] object-cover"
               />
             </div>
           </FadeIn>
