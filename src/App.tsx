@@ -64,7 +64,7 @@ function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
           alt="Editorial fashion"
           className="w-full h-full object-cover object-top opacity-85"
         />
-        <div className="absolute inset-0 bg-[#F3EBE2]/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F3EBE2]/80 via-[#F3EBE2]/0 to-[#F3EBE2]/0" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full py-32 md:py-0">
