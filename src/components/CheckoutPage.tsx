@@ -5,7 +5,6 @@ import { ArrowLeft, Check } from 'lucide-react';
 
 interface CheckoutPageProps {
   onBack: () => void;
-  onOrderComplete: () => void;
 }
 
 interface FormData {
@@ -50,7 +49,7 @@ const initialForm: FormData = {
   note: '',
 };
 
-export function CheckoutPage({ onBack, onOrderComplete }: CheckoutPageProps) {
+export function CheckoutPage({ onBack }: CheckoutPageProps) {
   const { items, subtotal, clearCart } = useCart();
   const [form, setForm] = useState<FormData>(initialForm);
   const [placed, setPlaced] = useState(false);

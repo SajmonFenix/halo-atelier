@@ -521,7 +521,7 @@ function AppInner() {
       )}
 
       {view === 'checkout' && (
-        <CheckoutPage onBack={() => navigate('shop')} onOrderComplete={() => navigate('home')} />
+        <CheckoutPage onBack={() => navigate('shop')} />
       )}
 
       <MiniCart

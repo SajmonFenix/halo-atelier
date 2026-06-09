@@ -26,7 +26,7 @@ export function ProductDetailPage({ product, onBack, onAddedToCart }: ProductDet
   );
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
-  const [mainImg, setMainImg] = useState(product.image);
+  const mainImg = product.image;
 
   const colorAttr = product.attributes.find(a => a.name === 'Farba');
   const lengthAttr = product.attributes.find(a => a.name === 'Dĺžka');
@@ -129,7 +129,6 @@ export function ProductDetailPage({ product, onBack, onAddedToCart }: ProductDet
                 <div className="flex flex-wrap gap-3">
                   {lengthAttr.options.map(opt => {
                     const premium = opt.includes('45cm') ? 20 : opt.includes('55cm') ? 40 : 0;
-                    const base = product.on_sale && product.sale_price ? product.sale_price : product.regular_price;
                     return (
                       <button
                         key={opt}

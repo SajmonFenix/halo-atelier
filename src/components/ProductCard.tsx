@@ -74,10 +74,10 @@ export function ProductCard({ product, onQuickView, onViewProduct, onAddedToCart
           </div>
         </div>
       </div>
-      <div onClick={() => onViewProduct(product)}>
-        <p className="font-sans text-[10px] tracking-editorial uppercase text-halo-accent mb-1 px-1">Halo Atelier</p>
-        <h3 className="font-serif text-lg md:text-xl font-medium text-halo-text mb-1.5 px-1">{product.name}</h3>
-        <div className="flex items-center gap-2 px-1">
+      <div onClick={() => onViewProduct(product)} className="p-3">
+        <p className="font-sans text-[10px] tracking-editorial uppercase text-halo-accent mb-1">Halo Atelier</p>
+        <h3 className="font-serif text-lg md:text-xl font-medium text-halo-text mb-1.5">{product.name}</h3>
+        <div className="flex items-center gap-2">
           {product.on_sale ? (
             <>
               <span className="font-sans text-sm text-halo-text font-semibold">{formatPrice(defaultVar.price)}</span>
