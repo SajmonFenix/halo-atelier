@@ -70,7 +70,7 @@ function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full py-32 md:py-0">
         <div className="max-w-xl">
           <p className="animate-fadeInUp delay-400 font-sans text-[11px] tracking-[4px] uppercase text-[#3D3D3D] mb-6">
-            Premium Wig House
+            Prémiový ateliér parochní
           </p>
 
           <h1 className="animate-fadeInUp delay-500 mb-6">
