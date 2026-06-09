@@ -88,7 +88,7 @@ export function ProductCard({ product, onQuickView, onViewProduct, onAddedToCart
           )}
         </div>
       </div>
-      <div className="px-1 mt-2 md:hidden flex flex-col gap-1.5">
+      <div className="px-2 pb-3 md:hidden flex flex-col gap-1.5">
         <button
           onClick={handleViewDetail}
           className="w-full font-sans text-[10px] tracking-editorial uppercase bg-halo-text text-[#FAF7F4] py-2.5 hover:bg-halo-text/90 transition-colors duration-300"
