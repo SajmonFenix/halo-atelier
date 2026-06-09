@@ -119,7 +119,8 @@ function BrandStory() {
         </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
-          <div className="max-w-xl md:border-r md:border-[#B8976A] md:pr-16">
+          <div className="max-w-xl md:pr-16 relative">
+            <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-[300px] bg-[#B8976A]/50" />
             <FadeIn delay={0.2}><Divider /></FadeIn>
             <FadeIn delay={0.3}>
               <p className="font-sans text-base md:text-lg leading-[1.8] text-halo-text/85 mt-10">
@@ -225,7 +226,8 @@ function Philosophy() {
         </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
           <FadeIn>
-            <div className="relative md:border-r md:border-[#B8976A] md:pr-16">
+            <div className="relative md:pr-16">
+              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-[300px] bg-[#B8976A]/50" />
               <img
                 src="/images/generated-1780910628869.png"
                 alt="Halo Atelier filozofia"
