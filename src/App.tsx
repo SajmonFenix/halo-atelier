@@ -90,7 +90,7 @@ function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
 
           <button
             onClick={() => onNavigate('shop')}
-            className="animate-fadeInUp delay-800 inline-block font-sans text-[11px] tracking-[3px] uppercase bg-[#4A403A] text-[#FAF7F4] px-8 py-4 hover:bg-[#CFC3B8] transition-colors duration-300"
+            className="animate-fadeInUp delay-800 inline-block font-sans text-[11px] tracking-[3px] uppercase bg-[#4A403A] text-[#FAF7F4] px-8 py-4 hover:bg-[#8E7F73] transition-colors duration-300"
           >
             Prejsť do obchodu
           </button>
