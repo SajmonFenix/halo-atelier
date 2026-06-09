@@ -392,10 +392,10 @@ function Navbar({ onNavigate, onOpenCart, currentView }: NavbarProps) {
           ))}
           <button
             onClick={() => { setMenuOpen(false); onNavigate('shop'); }}
-            className={`font-sans text-[10px] tracking-editorial uppercase transition-colors duration-300 ${
+            className={`font-sans text-[10px] tracking-editorial uppercase px-6 py-2.5 transition-colors duration-300 ${
               currentView === 'shop' || currentView === 'product'
-                ? 'text-[#D6C1A3]'
-                : 'text-[#FAF7F4]/70 hover:text-[#D6C1A3]'
+                ? 'bg-halo-hover text-white'
+                : 'bg-halo-button text-halo-text hover:bg-halo-hover hover:text-white'
             }`}
           >
             Obchod
