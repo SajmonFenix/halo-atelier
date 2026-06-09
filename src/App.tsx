@@ -220,6 +220,9 @@ function Philosophy() {
   return (
     <section id="filozofia" className="py-24 md:py-36 px-6 bg-halo-bg">
       <div className="max-w-6xl mx-auto">
+        <FadeIn>
+          <p className="font-sans text-xs tracking-editorial uppercase text-halo-text mb-12 text-center font-normal">Filozofia</p>
+        </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
           <FadeIn>
             <div className="relative">
@@ -232,9 +235,6 @@ function Philosophy() {
           </FadeIn>
 
           <div>
-            <FadeIn>
-              <p className="font-sans text-xs tracking-editorial uppercase text-halo-text mb-6 text-center font-normal">Filozofia</p>
-            </FadeIn>
             <FadeIn delay={0.1}>
               <blockquote className="font-serif text-2xl md:text-3xl text-halo-text leading-[1.2] mb-12">
                 Krása tu nevzniká nátlakom. Vzniká v tichu, v pozornosti a v rozhodnutí cítiť sa opäť ako žena.
