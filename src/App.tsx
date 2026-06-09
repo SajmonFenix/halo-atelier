@@ -64,7 +64,9 @@ function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
           alt="Editorial fashion"
           className="w-full h-full object-cover object-top opacity-85"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(207,195,184,0.95)_0%,rgba(207,195,184,0.95)_40%,transparent_60%,transparent_100%)]" />
+        <div className="absolute inset-0 bg-[#CFC3B8]/80 md:hidden" />
+        <div className="absolute inset-0 hidden md:block lg:hidden bg-[linear-gradient(to_right,rgba(207,195,184,0.95)_0%,rgba(207,195,184,0.95)_60%,transparent_80%,transparent_100%)]" />
+        <div className="absolute inset-0 hidden lg:block bg-[linear-gradient(to_right,rgba(207,195,184,0.95)_0%,rgba(207,195,184,0.95)_40%,transparent_60%,transparent_100%)]" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full py-32 md:py-0">
