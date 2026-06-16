@@ -5,8 +5,11 @@ export default {
     extend: {
       colors: {
         halo: {
-          bg: '#FAF7F4',
-          section: '#F5EFEA',
+          bg: '#F5F0EB',
+          dark: '#1A1A1A',
+          muted: '#5C5550',
+          section: '#EEE8E1',
+          promise: '#EDE4DC',
           text: '#4A403A',
           button: '#CFC3B8',
           hover: '#8E7F73',
@@ -14,8 +17,8 @@ export default {
         },
       },
       fontFamily: {
-        serif: ['Playfair Display', 'Georgia', 'serif'],
-        sans: ['Raleway', 'Helvetica', 'Arial', 'sans-serif'],
+        serif: ['GFS Didot', 'Georgia', 'serif'],
+        sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
       },
       letterSpacing: {
         editorial: '0.35em',

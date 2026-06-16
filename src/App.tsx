@@ -32,133 +32,104 @@ function FadeIn({ children, className = '', delay = 0 }: { children: React.React
   );
 }
 
-const Divider = () => (
-  <span className="text-halo-text text-lg tracking-editorial mx-2 select-none">&#10023; &#10023; &#10023;</span>
-);
+const features = [
+  {
+    icon: '/images/ikona-1-vlasy.png',
+    title: '100% HUMAN HAIR',
+    desc: 'Always real human hair. No synthetic blends.',
+  },
+  {
+    icon: '/images/ikona-2-pierko.png',
+    title: 'LIGHTWEIGHT COMFORT',
+    desc: 'All-day wear. No compromise.',
+  },
+  {
+    icon: '/images/ikona-3-srdce.png',
+    title: 'DESIGNED FOR REAL LIFE',
+    desc: 'From everyday life for every moment.',
+  },
+  {
+    icon: '/images/ikona-4-lesk.png',
+    title: 'LUXURY YOU CAN FEEL',
+    desc: 'From the first touch to every detail.',
+  },
+];
 
-const values = [
+const promises = [
   {
-    title: 'Jemnosť',
-    desc: 'K žene aj k materiálu. Vedieť, kedy stačí málo. Tiché gesto, ktoré povie viac ako hlasné slová.',
+    icon: '/images/01-100-percent-human-hair-shield-check.png',
+    title: '100% HUMAN HAIR',
+    desc: 'Always real human hair. No synthetic blends.',
   },
   {
-    title: 'Úcta',
-    desc: 'Ku každému príbehu. Rešpektovať cestu ženy a nemeniť ju, iba doplniť to, čo sama cíti.',
+    icon: '/images/02-carefully-curated-search.png',
+    title: 'CAREFULLY CURATED',
+    desc: 'Every piece is selected with intention and quality in mind.',
   },
   {
-    title: 'Prirodzenosť',
-    desc: 'Nič nasilu. Hľadať pravdivú líniu a farbu, ktorá nie je dokonalá, ale je skutočná.',
+    icon: '/images/03-personal-guidance-user.png',
+    title: 'PERSONAL GUIDANCE',
+    desc: 'We help you find the right piece for you.',
   },
   {
-    title: 'Ženskosť',
-    desc: 'Neha, sila a krehkosť v rovnováhe, ktorú si každá žena nesie inak.',
+    icon: '/images/04-ongoing-care-heart.png',
+    title: 'ONGOING CARE',
+    desc: 'Re-fresh & care services coming soon.',
+  },
+];
+
+const footerStripItems = [
+  {
+    icon: '/images/05-worldwide-shipping-globe.png',
+    title: 'WORLDWIDE SHIPPING',
+  },
+  {
+    icon: '/images/06-personalized-support-heart.png',
+    title: 'PERSONALIZED SUPPORT',
+  },
+  {
+    icon: '/images/07-secure-payments-lock.png',
+    title: 'SECURE PAYMENTS',
   },
 ];
 
 function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-[#F3EBE2]">
-      <div className="absolute inset-0 z-0">
+    <section className="relative overflow-hidden bg-halo-bg" style={{ height: 600 }}>
+      <div className="absolute inset-0">
         <img
-          src="/images/generated-1780910617720.png"
-          alt="Editorial fashion"
-          className="w-full h-full object-cover object-top opacity-85"
+          src="/images/fotka pre hlavny banner 2.png"
+          alt="Hero"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#CFC3B8]/80 md:hidden" />
-        <div className="absolute inset-0 hidden md:block lg:hidden bg-[linear-gradient(to_right,rgba(207,195,184,0.8)_0%,rgba(207,195,184,0.8)_50%,transparent_70%,transparent_100%)]" />
-        <div className="absolute inset-0 hidden lg:block bg-[linear-gradient(to_right,rgba(207,195,184,0.95)_0%,rgba(207,195,184,0.95)_40%,transparent_60%,transparent_100%)]" />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full py-32 md:py-0">
-        <div className="max-w-xl">
-          <p className="animate-fadeInUp delay-400 font-sans text-[11px] tracking-[4px] uppercase text-[#3D3D3D] mb-6">
-            Prémiový ateliér parochní
-          </p>
-
-          <h1 className="animate-fadeInUp delay-500 mb-6">
-            <span className="block font-serif text-5xl md:text-7xl font-normal leading-[1.0] text-[#4A403A]">
-              Všetko o žene
-            </span>
-            <span className="block font-serif text-5xl md:text-7xl font-normal italic leading-[1.0] text-[#4A403A]">
-              takej, aká je.
-            </span>
-          </h1>
-
-          <p className="animate-fadeInUp delay-700 font-sans text-base font-normal leading-[1.6] text-[#3D3D3D] mb-10">
-            Prémiový ateliér parochní a vlasových diel<br /> — priestor, kde sa krása nesnaží, len je.
-          </p>
-
-          <button
-            onClick={() => onNavigate('shop')}
-            className="animate-fadeInUp delay-800 inline-block font-sans text-[11px] tracking-[3px] uppercase bg-[#4A403A] text-[#FAF7F4] px-8 py-4 hover:bg-[#8E7F73] transition-colors duration-300"
-          >
-            Prejsť do obchodu
-          </button>
-        </div>
-      </div>
-
-      <div className="absolute right-24 top-16 hidden lg:flex flex-col items-center gap-2 animate-fadeInUp delay-800">
-        <div className="w-px h-20 bg-[#C5BEB6]" />
-      </div>
-    </section>
-  );
-}
-
-function BrandStory() {
-  return (
-    <section id="pribeh" className="py-20 px-6 bg-halo-bg">
-      <div className="max-w-6xl mx-auto">
-        <FadeIn>
-          <p className="font-sans text-xs tracking-editorial uppercase text-[#B8976A] mb-8 text-center font-normal">Náš príbeh</p>
-        </FadeIn>
-
-        <FadeIn delay={0.1}>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-halo-text leading-[1.2] mb-12 text-center">
-            Vrátiť sa k tomu,<br />čo je skutočné
-          </h2>
-        </FadeIn>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
-          <div className="max-w-xl md:pr-16 relative">
-            <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-[300px] bg-[#B8976A]/50" />
-            <FadeIn delay={0.2}><Divider /></FadeIn>
-            <FadeIn delay={0.3}>
-              <p className="font-sans text-base md:text-lg leading-[1.8] text-halo-text/85 mt-10">
-                Halo Atelier vznikol z jednoduchej myšlienky – vrátiť sa k tomu, čo je skutočné. K hodnotám, ktoré tu boli vždy. K jemnosti. K úcte. K prirodzenej kráse ženy.
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.4}>
-              <p className="font-sans text-base md:text-lg leading-[1.8] text-halo-text/85 mt-6">
-                V dnešnom svete sa často zabúda na to najpodstatnejšie – že každá žena je jedinečná presne taká, aká je. Naším cieľom nikdy nebolo ženy meniť. Chceme len jemne podčiarknuť ich charizmu, osobnosť a svetlo, ktoré už v sebe majú.
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.5}><Divider /></FadeIn>
-            <FadeIn delay={0.6}>
-              <p className="font-sans text-base md:text-lg leading-[1.8] text-halo-text/85 mt-10">
-                Pre nás parochňa nie je maska. Je to detail. Šperk, ktorý môže žene pripomenúť jej vlastnú krásu.
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.7}>
-              <p className="font-sans text-base md:text-lg leading-[1.8] text-halo-text/85 mt-6">
-                Halo Atelier vznikol pre ženy, ktoré svoje vlasy stratili, ale aj pre ženy, ktoré ich majú a jednoducho túžia po zmene alebo novom pocite. Pre ženy s rôznymi príbehmi. S rôznymi cestami. Pre každú, ktorá chce cítiť, že môže byť sama sebou.
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.8}><Divider /></FadeIn>
-            <FadeIn delay={0.9}>
-              <p className="font-sans text-sm tracking-editorial uppercase text-halo-text mt-10">
-                S láskou a úctou k ženskosti. Halo Atelier.
-              </p>
-            </FadeIn>
-          </div>
-
+      <div className="relative z-10 h-full flex items-center" style={{ paddingLeft: 66 }}>
+        <div className="max-w-xs flex flex-col gap-2">
+          <FadeIn>
+            <p className="font-serif text-[42px] italic leading-none text-[#211A16]">Seen.</p>
+          </FadeIn>
+          <FadeIn delay={0.15}>
+            <p className="font-serif text-[42px] italic leading-none text-[#211A16]">Not staged.</p>
+          </FadeIn>
           <FadeIn delay={0.3}>
-            <div className="relative md:pl-16">
-              <img
-                src="/images/generated-1780910628869.png"
-                alt="Halo Atelier story"
-                className="w-full h-[500px] md:h-[600px] object-cover rounded-sm"
-              />
-            </div>
+            <p
+              className="font-sans text-[10px] font-medium leading-[1.4] text-[#211A16] mt-1"
+              style={{ maxWidth: 300 }}
+            >
+              Designed to feel like your own.
+            </p>
+          </FadeIn>
+          <div className="h-3" />
+          <FadeIn delay={0.45}>
+            <button
+              onClick={() => onNavigate('shop')}
+              className="inline-flex items-center gap-2 border border-[#211A16] px-[18px] py-[10px]"
+            >
+              <span className="font-sans text-[8px] font-semibold tracking-[0.7px] uppercase text-[#211A16]">
+                DISCOVER COLLECTIONS
+              </span>
+            </button>
           </FadeIn>
         </div>
       </div>
@@ -166,134 +137,138 @@ function BrandStory() {
   );
 }
 
-interface ProductsSectionProps {
-  onQuickView: (product: Product) => void;
-  onViewProduct: (product: Product) => void;
-  onViewAll: () => void;
-  onAddedToCart?: () => void;
-}
-
-function ProductsSection({ onQuickView, onViewProduct, onViewAll, onAddedToCart }: ProductsSectionProps) {
+function PremiumSection() {
   return (
-    <section id="kolekcia" className="py-20 px-6 bg-halo-section">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-halo-bg px-[54px] py-9">
+      <div className="max-w-4xl mx-auto flex flex-col items-center gap-4">
         <FadeIn>
-          <div className="text-center mb-16 md:mb-24">
-            <p className="font-sans text-xs tracking-editorial uppercase text-[#B8976A] mb-4 font-normal">Kolekcia</p>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-halo-text leading-[1.2] mb-4">
-              Každý kus ako šperk.
-            </h2>
-            <p className="font-sans text-sm md:text-base text-halo-text/60 max-w-md mx-auto">
-              Navrhnuté s dôrazom na detail, materiál a tvar, ktorý rešpektuje tvár.
-            </p>
-          </div>
+          <p className="font-serif text-[12px] font-medium tracking-[3.8px] text-halo-dark text-center">
+            PREMIUM HUMAN HAIR WIGS
+          </p>
         </FadeIn>
-
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
-          {products.map((product, i) => (
-            <FadeIn key={product.id} delay={i * 0.1}>
-              <ProductCard
-                product={product}
-                onQuickView={onQuickView}
-                onViewProduct={onViewProduct}
-                onAddedToCart={onAddedToCart}
-              />
+        <FadeIn delay={0.1}>
+          <p className="font-serif text-[21px] italic text-halo-dark text-center" style={{ maxWidth: 560 }}>
+            Designed to be felt, not just seen.
+          </p>
+        </FadeIn>
+        <div
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-4"
+          style={{ maxWidth: 850, width: '100%' }}
+        >
+          {features.map((f, i) => (
+            <FadeIn key={f.title} delay={0.2 + i * 0.1}>
+              <div className="flex flex-col items-center gap-2 px-4">
+                <img src={f.icon} alt={f.title} className="w-7 h-7 object-contain" />
+                <p className="font-serif text-[9px] font-medium tracking-[1.8px] text-halo-dark text-center">
+                  {f.title}
+                </p>
+                <p className="font-sans text-[11px] leading-[1.42] text-halo-muted text-center">
+                  {f.desc}
+                </p>
+              </div>
             </FadeIn>
           ))}
         </div>
-
-        <FadeIn delay={0.8}>
-          <div className="text-center mt-16">
-            <button
-              onClick={onViewAll}
-              className="font-sans text-xs tracking-editorial uppercase bg-halo-button text-halo-text px-10 py-4 hover:bg-halo-hover hover:text-white transition-colors duration-300"
-            >
-              Zobraziť celú kolekciu
-            </button>
-          </div>
-        </FadeIn>
       </div>
     </section>
   );
 }
 
-function Philosophy() {
+function CraftedSection() {
   return (
-    <section id="filozofia" className="py-20 px-6 bg-halo-bg">
-      <div className="max-w-6xl mx-auto">
-        <FadeIn>
-          <p className="font-sans text-xs tracking-editorial uppercase text-[#B8976A] mb-12 text-center font-normal">Filozofia</p>
-        </FadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
+    <section className="bg-halo-bg">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="h-[300px]">
+          <img
+            src="/images/fotka pre sekciu 3.png"
+            alt="Crafted with intention"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="bg-halo-section h-[300px] flex flex-col justify-center gap-3 px-14 py-[38px]">
           <FadeIn>
-            <div className="relative md:pr-16">
-              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-[300px] bg-[#B8976A]/50" />
-              <img
-                src="/images/generated-1780910628869.png"
-                alt="Halo Atelier filozofia"
-                className="w-full h-[500px] md:h-[600px] object-cover"
-              />
-            </div>
+            <p className="font-serif text-[12px] font-medium tracking-[3.8px] text-halo-dark">
+              CRAFTED WITH INTENTION
+            </p>
           </FadeIn>
-
-          <div className="md:pl-16">
-            <FadeIn delay={0.1}>
-              <blockquote className="font-serif text-2xl md:text-3xl text-halo-text leading-[1.2] mb-12">
-                Krása tu nevzniká nátlakom. Vzniká v tichu, v pozornosti a v rozhodnutí cítiť sa opäť ako žena.
-              </blockquote>
-            </FadeIn>
-            <div className="grid grid-cols-2 gap-6 md:gap-8">
-              {values.map((value, i) => (
-                <FadeIn key={value.title} delay={0.2 + i * 0.08}>
-                  <div>
-                    <p className="font-sans text-[10px] tracking-editorial uppercase text-halo-text mb-2">0{i + 1}</p>
-                    <h3 className="font-serif text-lg md:text-xl font-semibold text-halo-text mb-2">{value.title}</h3>
-                    <p className="font-sans text-sm leading-[1.6] text-halo-text/60">{value.desc}</p>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
-          </div>
+          <FadeIn delay={0.1}>
+            <p className="font-serif text-[23px] italic text-halo-dark">
+              Every piece deserves<br />to be cared for.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <p className="font-sans text-[11px] leading-[1.45] text-[#4F4944]" style={{ maxWidth: 400 }}>
+              Your wig is an investment in confidence. Our future atelier services are designed to extend the beauty, comfort and longevity of every piece.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.3}>
+            <button className="self-start inline-flex items-center gap-2 border border-halo-dark px-[22px] py-[10px]">
+              <span className="font-sans text-[9px] font-semibold tracking-[0.7px] uppercase text-halo-dark">
+                DISCOVER ATELIER {'\u2727'}
+              </span>
+            </button>
+          </FadeIn>
         </div>
       </div>
     </section>
   );
 }
 
-function ForWhom() {
+function PromiseSection() {
   return (
-    <section id="pre-koho" className="py-20 px-6 bg-halo-section">
-      <div className="max-w-[72rem] mx-auto text-center p-10 md:p-16">
+    <section className="bg-halo-promise px-[54px] py-[42px]">
+      <div className="flex flex-col items-center gap-[26px]">
         <FadeIn>
-          <p className="font-sans text-xs tracking-editorial uppercase text-[#B8976A] mb-8 text-center font-normal">Pre koho</p>
+          <p
+            className="font-serif text-[12px] tracking-[3px] text-halo-dark text-center"
+            style={{ maxWidth: 520 }}
+          >
+            THE HALO PROMISE
+          </p>
         </FadeIn>
-        <FadeIn delay={0.1}>
-          <div className="bg-[#FAF7F4] p-8 md:p-10 mb-8 md:mb-10">
-            <h2 className="font-serif text-2xl md:text-3xl text-halo-text leading-[1.25]">
-              Pre každú ženu. S rôznymi príbehmi. S rôznymi cestami.
-            </h2>
-          </div>
-        </FadeIn>
-        <FadeIn delay={0.2}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-            <div className="bg-[#FAF7F4] p-8 md:p-10 text-left">
-              <h3 className="font-serif text-xl md:text-2xl font-medium text-halo-text mb-4">
-                Pre ženy, ktoré stratili vlasy
-              </h3>
-              <p className="font-sans text-base leading-[1.8] text-halo-text/75">
-                Či pre zdravotné dôvody, liečbu, alebo inú cestu — vieme, že strata vlasov je hlboký moment. Pripravíme pre vás parochňu, v ktorej sa znovu uvidíte. Bez nátlaku. V bezpečí a s trpezlivosťou.
-              </p>
+        <div
+          className="grid grid-cols-2 md:grid-cols-4 gap-6"
+          style={{ maxWidth: 860, width: '100%' }}
+        >
+          {promises.map((p, i) => (
+            <FadeIn key={p.title} delay={0.15 + i * 0.1}>
+              <div className="flex flex-col items-center gap-[7px] px-[18px]">
+                <img src={p.icon} alt={p.title} className="w-7 h-7 object-contain" />
+                <p
+                  className="font-serif text-[8px] tracking-[1.5px] text-halo-dark text-center"
+                  style={{ maxWidth: 136 }}
+                >
+                  {p.title}
+                </p>
+                <p
+                  className="font-sans text-[10px] leading-[1.35] text-halo-text text-center"
+                  style={{ maxWidth: 132 }}
+                >
+                  {p.desc}
+                </p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FooterStrip() {
+  return (
+    <section className="bg-halo-promise px-[54px] py-[18px]">
+      <div className="flex flex-wrap items-center justify-center gap-[52px]">
+        {footerStripItems.map((item, i) => (
+          <FadeIn key={item.title} delay={i * 0.1}>
+            <div className="flex items-center gap-2">
+              <img src={item.icon} alt={item.title} className="w-[17px] h-[17px] object-contain" />
+              <span className="font-serif text-[8px] tracking-[1.4px] text-halo-dark">
+                {item.title}
+              </span>
             </div>
-            <div className="bg-[#FAF7F4] p-8 md:p-10 text-left">
-              <h3 className="font-serif text-xl md:text-2xl font-medium text-halo-text mb-4">
-                Pre ženy, ktoré túžia po zmene
-              </h3>
-              <p className="font-sans text-base leading-[1.8] text-halo-text/75">
-                Nie každá parochňa je o náhrade. Niekedy je to nový pocit. Nový štýl. Nová vrstva sebaistoty. Pre ženy, ktoré majú svoje vlasy a chcú vyskúšať niečo iné — sme tu aj pre vás.
-              </p>
-            </div>
-          </div>
-        </FadeIn>
+          </FadeIn>
+        ))}
       </div>
     </section>
   );
@@ -301,15 +276,15 @@ function ForWhom() {
 
 function ContactFooter({ onNavigate }: { onNavigate: (view: View) => void }) {
   return (
-    <footer id="kontakt" className="py-20 md:py-28 px-6 bg-[#4A403A]">
+    <footer id="kontakt" className="py-20 md:py-28 px-6 bg-halo-dark">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           <FadeIn>
             <div className="flex flex-col gap-6 items-start">
-              <div className="w-full pb-3 border-b border-[#D6C1A3]/40">
-                <p className="font-sans text-xs tracking-editorial uppercase text-[#D6C1A3]">KONTAKT</p>
+              <div className="w-full pb-3 border-b border-halo-accent/40">
+                <p className="font-sans text-xs tracking-[3px] uppercase text-halo-accent">KONTAKT</p>
               </div>
-              <img src="/images/halo_logo_atelier_00.png" alt="Halo Atelier" className="h-16 w-auto" />
+              <img src="/images/halo_logo_atelier_00.png" alt="Halo Atelier" className="h-16 w-auto brightness-0 invert" />
               <p className="font-sans text-xs text-[#FAF7F4]/60 leading-[1.6]">Prémiový ateliér parochní a vlasových diel.</p>
               <div className="flex flex-col gap-2">
                 <p className="font-sans text-sm text-[#FAF7F4]/60">info@haloatelier.sk</p>
@@ -321,8 +296,8 @@ function ContactFooter({ onNavigate }: { onNavigate: (view: View) => void }) {
 
           <FadeIn delay={0.15}>
             <div className="flex flex-col gap-6">
-              <div className="w-full pb-3 border-b border-[#D6C1A3]/40">
-                <p className="font-sans text-xs tracking-editorial uppercase text-[#D6C1A3]">OTVÁRACIE HODINY</p>
+              <div className="w-full pb-3 border-b border-halo-accent/40">
+                <p className="font-sans text-xs tracking-[3px] uppercase text-halo-accent">OTVÁRACIE HODINY</p>
               </div>
               <div className="flex flex-col gap-3">
                 <p className="font-sans text-sm text-[#FAF7F4]">Pondelok - Piatok: 10:00 - 18:00</p>
@@ -334,15 +309,15 @@ function ContactFooter({ onNavigate }: { onNavigate: (view: View) => void }) {
 
           <FadeIn delay={0.3}>
             <div className="flex flex-col gap-6">
-              <div className="w-full pb-3 border-b border-[#D6C1A3]/40">
-                <p className="font-sans text-xs tracking-editorial uppercase text-[#D6C1A3]">OBCHOD</p>
+              <div className="w-full pb-3 border-b border-halo-accent/40">
+                <p className="font-sans text-xs tracking-[3px] uppercase text-halo-accent">OBCHOD</p>
               </div>
               <p className="font-sans text-sm text-[#FAF7F4]/60 leading-[1.6]">
                 Prémiové parochne a vlasové diely. Každý kus ako šperk.
               </p>
               <button
                 onClick={() => onNavigate('shop')}
-                className="self-start font-sans text-xs tracking-editorial uppercase bg-halo-button text-halo-text px-8 py-3.5 hover:bg-halo-hover hover:text-white transition-colors duration-300"
+                className="self-start font-sans text-xs tracking-[3px] uppercase bg-halo-button text-halo-text px-8 py-3.5 hover:bg-halo-hover hover:text-white transition-colors duration-300"
               >
                 Zobraziť kolekciu
               </button>
@@ -371,59 +346,74 @@ function Navbar({ onNavigate, onOpenCart, currentView }: NavbarProps) {
 
   const isHome = currentView === 'home';
 
-  const sectionLinks = [
-    { label: 'Príbeh', id: 'pribeh' },
-    { label: 'Filozofia', id: 'filozofia' },
-    { label: 'Pre koho', id: 'pre-koho' },
-    { label: 'Kontakt', id: 'kontakt' },
+  const navItems = [
+    { label: 'HOME', id: 'home' },
+    { label: 'COLLECTIONS', id: 'collections' },
+    { label: 'ABOUT US', id: 'about' },
+    { label: 'JOURNAL', id: 'journal' },
+    { label: 'ATELIER ◇', id: 'atelier' },
+    { label: 'CONTACT', id: 'kontakt' },
   ];
 
-  const handleSectionClick = (id: string) => {
+  const handleNavClick = (item: { label: string; id: string }) => {
     setMenuOpen(false);
-    if (isHome) {
-      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    } else {
+    if (item.id === 'collections') {
+      onNavigate('shop');
+    } else if (item.id === 'home') {
       onNavigate('home');
-      setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (item.id === 'kontakt') {
+      if (isHome) {
+        document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        onNavigate('home');
+        setTimeout(() => {
+          document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' });
+        }, 150);
+      }
+    } else if (item.id && isHome) {
+      const el = document.getElementById(item.id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#4A403A] transition-all duration-300">
-      <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-        <button onClick={() => onNavigate('home')} className="flex items-center gap-3">
-          <img src="/images/halo_logo_atelier_00.png" alt="Halo Atelier" className="h-16 w-auto" />
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-halo-bg transition-all duration-300" style={{ height: 58 }}>
+      <div className="h-full flex items-center justify-between px-6">
+        <button onClick={() => { setMenuOpen(false); onNavigate('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex flex-col gap-px">
+          <span className="font-serif text-[17px] font-bold tracking-[1.6px] text-halo-dark leading-none">
+            HALO ATELIER
+          </span>
+          <span className="font-sans text-[7px] tracking-[1.6px] text-halo-dark leading-none">
+            PREMIUM WIG HOUSE
+          </span>
         </button>
 
-        <div className="hidden md:flex items-center gap-8">
-          {sectionLinks.map((link) => (
+        <div className="hidden md:flex items-center gap-[22px]">
+          {navItems.map((item) => (
             <button
-              key={link.id}
-              onClick={() => handleSectionClick(link.id)}
-              className="font-sans text-[10px] tracking-editorial uppercase text-[#FAF7F4]/70 hover:text-[#D6C1A3] transition-colors duration-300"
+              key={item.id}
+              onClick={() => handleNavClick(item)}
+              className="font-sans text-[8px] font-semibold tracking-[0.7px] text-halo-dark hover:opacity-60 transition-opacity uppercase"
             >
-              {link.label}
+              {item.label}
             </button>
           ))}
           <button
-            onClick={() => { setMenuOpen(false); onNavigate('shop'); }}
-            className={`font-sans text-[10px] tracking-editorial uppercase px-6 py-2.5 transition-colors duration-300 ${
-              currentView === 'shop' || currentView === 'product'
-                ? 'bg-halo-hover text-white'
-                : 'bg-halo-button text-halo-text hover:bg-halo-hover hover:text-white'
-            }`}
+            onClick={() => onNavigate('shop')}
+            className="font-sans text-[8px] font-semibold tracking-[0.7px] text-halo-dark uppercase border border-halo-dark px-[14px] py-2 hover:bg-halo-dark hover:text-white transition-colors"
           >
-            Obchod
+            DISCOVER
           </button>
           <button
             onClick={onOpenCart}
-            className="relative font-sans text-[10px] tracking-editorial uppercase text-[#FAF7F4]/70 hover:text-[#D6C1A3] transition-colors duration-300"
+            className="relative text-halo-dark"
           >
-            <ShoppingCart size={18} />
+            <ShoppingCart size={16} />
             {itemCount > 0 && (
-              <span className="absolute -top-2 -right-2 w-4 h-4 flex items-center justify-center bg-halo-button text-halo-text text-[9px] font-sans font-bold rounded-full">
+              <span className="absolute -top-2 -right-2 w-4 h-4 flex items-center justify-center bg-halo-dark text-white text-[9px] font-bold rounded-full">
                 {itemCount > 9 ? '9+' : itemCount}
               </span>
             )}
@@ -433,11 +423,11 @@ function Navbar({ onNavigate, onOpenCart, currentView }: NavbarProps) {
         <div className="flex items-center gap-3 md:hidden">
           <button
             onClick={onOpenCart}
-            className="relative p-1 text-[#FAF7F4]/70"
+            className="relative p-1 text-halo-dark"
           >
-            <ShoppingCart size={18} />
+            <ShoppingCart size={16} />
             {itemCount > 0 && (
-              <span className="absolute -top-1 -right-1 w-4 h-4 flex items-center justify-center bg-halo-button text-halo-text text-[9px] font-sans font-bold rounded-full">
+              <span className="absolute -top-1 -right-1 w-4 h-4 flex items-center justify-center bg-halo-dark text-white text-[9px] font-bold rounded-full">
                 {itemCount > 9 ? '9+' : itemCount}
               </span>
             )}
@@ -447,36 +437,30 @@ function Navbar({ onNavigate, onOpenCart, currentView }: NavbarProps) {
             className="flex flex-col gap-1.5 p-2"
             aria-label="Menu"
           >
-            <span className={`block w-6 h-px bg-[#FAF7F4] transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[5px]' : ''}`} />
-            <span className={`block w-6 h-px bg-[#FAF7F4] transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-            <span className={`block w-6 h-px bg-[#FAF7F4] transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[5px]' : ''}`} />
+            <span className={`block w-5 h-px bg-halo-dark transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[5px]' : ''}`} />
+            <span className={`block w-5 h-px bg-halo-dark transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block w-5 h-px bg-halo-dark transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[5px]' : ''}`} />
           </button>
         </div>
       </div>
 
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="px-6 pb-6 flex flex-col gap-4">
-          <button
-            onClick={() => { setMenuOpen(false); onNavigate('home'); }}
-            className="font-sans text-xs tracking-editorial uppercase text-[#FAF7F4]/70 py-2 text-left"
-          >
-            Domov
-          </button>
-          <button
-            onClick={() => { setMenuOpen(false); onNavigate('shop'); }}
-            className="font-sans text-xs tracking-editorial uppercase text-[#FAF7F4]/70 py-2 text-left"
-          >
-            Obchod
-          </button>
-          {sectionLinks.map((link) => (
+      <div className={`md:hidden overflow-hidden transition-all duration-300 bg-halo-bg border-t border-halo-dark/10 ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className="px-6 pb-6 pt-4 flex flex-col gap-3">
+          {navItems.map((item) => (
             <button
-              key={link.id}
-              onClick={() => handleSectionClick(link.id)}
-              className="font-sans text-xs tracking-editorial uppercase text-[#FAF7F4]/70 py-2 text-left"
+              key={item.id}
+              onClick={() => handleNavClick(item)}
+              className="font-sans text-[10px] font-semibold tracking-[0.7px] text-halo-dark py-2 text-left uppercase"
             >
-              {link.label}
+              {item.label}
             </button>
           ))}
+          <button
+            onClick={() => { setMenuOpen(false); onNavigate('shop'); }}
+            className="font-sans text-[10px] font-semibold tracking-[0.7px] text-halo-dark uppercase border border-halo-dark px-[14px] py-2 self-start"
+          >
+            DISCOVER
+          </button>
         </div>
       </div>
     </nav>
@@ -498,47 +482,52 @@ function AppInner() {
   };
 
   return (
-    <div className="min-h-screen bg-halo-bg text-halo-text font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-halo-bg text-halo-dark font-sans overflow-x-hidden">
       <Navbar onNavigate={navigate} onOpenCart={openCart} currentView={view} />
 
       {view === 'home' && (
         <>
-          <Hero onNavigate={navigate} />
-          <BrandStory />
-          <ProductsSection
-            onQuickView={setQuickViewProduct}
-            onViewProduct={(p) => navigate('product', p)}
-            onViewAll={() => navigate('shop')}
-            onAddedToCart={openCart}
-          />
-          <Philosophy />
-          <ForWhom />
+          <div className="pt-[58px]">
+            <Hero onNavigate={navigate} />
+            <PremiumSection />
+            <CraftedSection />
+            <PromiseSection />
+            <FooterStrip />
+          </div>
           <ContactFooter onNavigate={navigate} />
         </>
       )}
 
       {view === 'shop' && (
-        <ShopPage
-          onQuickView={setQuickViewProduct}
-          onViewProduct={(p) => navigate('product', p)}
-          onAddedToCart={openCart}
-        />
+        <div className="pt-[58px]">
+          <ShopPage
+            onQuickView={setQuickViewProduct}
+            onViewProduct={(p) => navigate('product', p)}
+            onAddedToCart={openCart}
+          />
+        </div>
       )}
 
       {view === 'product' && selectedProduct && (
-        <ProductDetailPage
-          product={selectedProduct}
-          onBack={() => navigate('shop')}
-          onAddedToCart={openCart}
-        />
+        <div className="pt-[58px]">
+          <ProductDetailPage
+            product={selectedProduct}
+            onBack={() => navigate('shop')}
+            onAddedToCart={openCart}
+          />
+        </div>
       )}
 
       {view === 'cart' && (
-        <CartPage onBack={() => navigate('shop')} onCheckout={() => navigate('checkout')} />
+        <div className="pt-[58px]">
+          <CartPage onBack={() => navigate('shop')} onCheckout={() => navigate('checkout')} />
+        </div>
       )}
 
       {view === 'checkout' && (
-        <CheckoutPage onBack={() => navigate('shop')} />
+        <div className="pt-[58px]">
+          <CheckoutPage onBack={() => navigate('shop')} />
+        </div>
       )}
 
       <Analytics />
