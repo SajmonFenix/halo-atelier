@@ -147,8 +147,10 @@ function PremiumSection() {
           </p>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <p className="font-serif text-[21px] italic text-halo-dark text-center" style={{ maxWidth: 560 }}>
-            Designed to be felt, not just seen.
+          <p className="font-serif text-[21px] italic text-halo-dark text-center leading-snug" style={{ maxWidth: 600 }}>
+            Crafted with precision. Designed for real life.<br />
+            Softness. Movement. Confidence.<br />
+            This is The Halo Effect.
           </p>
         </FadeIn>
         <div
