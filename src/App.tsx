@@ -104,7 +104,7 @@ function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>
-      <div className="relative z-10 h-full flex items-center" style={{ paddingLeft: 66 }}>
+      <div className="relative z-10 h-full max-w-[1440px] mx-auto flex items-center" style={{ paddingLeft: 66 }}>
         <div className="max-w-xs flex flex-col gap-2">
           <FadeIn>
             <p className="font-serif text-[42px] italic leading-none text-[#211A16]">Seen.</p>
@@ -140,7 +140,7 @@ function Hero({ onNavigate }: { onNavigate: (view: View) => void }) {
 function PremiumSection() {
   return (
     <section className="bg-halo-bg px-[54px] py-9">
-      <div className="max-w-4xl mx-auto flex flex-col items-center gap-4">
+      <div className="max-w-[1440px] mx-auto flex flex-col items-center gap-4">
         <FadeIn>
           <p className="font-serif text-[12px] font-medium tracking-[3.8px] text-halo-dark text-center">
             PREMIUM HUMAN HAIR WIGS
@@ -153,7 +153,7 @@ function PremiumSection() {
         </FadeIn>
         <div
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-4"
-          style={{ maxWidth: 850, width: '100%' }}
+          style={{ maxWidth: 1100, width: '100%' }}
         >
           {features.map((f, i) => (
             <FadeIn key={f.title} delay={0.2 + i * 0.1}>
@@ -177,7 +177,7 @@ function PremiumSection() {
 function CraftedSection() {
   return (
     <section className="bg-halo-bg">
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2">
         <div className="h-[300px]">
           <img
             src="/images/fotka pre sekciu 3.png"
@@ -217,7 +217,7 @@ function CraftedSection() {
 function PromiseSection() {
   return (
     <section className="bg-halo-promise px-[54px] py-[42px]">
-      <div className="flex flex-col items-center gap-[26px]">
+      <div className="max-w-[1440px] mx-auto flex flex-col items-center gap-[26px]">
         <FadeIn>
           <p
             className="font-serif text-[12px] tracking-[3px] text-halo-dark text-center"
@@ -227,8 +227,8 @@ function PromiseSection() {
           </p>
         </FadeIn>
         <div
-          className="grid grid-cols-2 md:grid-cols-4 gap-6"
-          style={{ maxWidth: 860, width: '100%' }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full"
+          style={{ maxWidth: 1100 }}
         >
           {promises.map((p, i) => (
             <FadeIn key={p.title} delay={0.15 + i * 0.1}>
@@ -258,7 +258,7 @@ function PromiseSection() {
 function FooterStrip() {
   return (
     <section className="bg-halo-promise px-[54px] py-[18px]">
-      <div className="flex flex-wrap items-center justify-center gap-[52px]">
+      <div className="max-w-[1440px] mx-auto flex flex-wrap items-center justify-center gap-[52px]">
         {footerStripItems.map((item, i) => (
           <FadeIn key={item.title} delay={i * 0.1}>
             <div className="flex items-center gap-2">
@@ -277,7 +277,7 @@ function FooterStrip() {
 function ContactFooter({ onNavigate }: { onNavigate: (view: View) => void }) {
   return (
     <footer id="kontakt" className="py-20 md:py-28 px-6 bg-halo-dark">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           <FadeIn>
             <div className="flex flex-col gap-6 items-start">
@@ -325,7 +325,7 @@ function ContactFooter({ onNavigate }: { onNavigate: (view: View) => void }) {
           </FadeIn>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-[#FAF7F4]/10">
+      <div className="max-w-[1440px] mx-auto mt-16 pt-8 border-t border-[#FAF7F4]/10">
         <FadeIn delay={0.4}>
           <p className="font-sans text-xs text-[#FAF7F4]/30 text-center">&copy; 2025 Halo Atelier. Všetky práva vyhradené.</p>
         </FadeIn>
@@ -381,7 +381,7 @@ function Navbar({ onNavigate, onOpenCart, currentView }: NavbarProps) {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-halo-bg transition-all duration-300" style={{ height: 58 }}>
-      <div className="h-full flex items-center justify-between px-6">
+      <div className="h-full max-w-[1440px] mx-auto flex items-center justify-between px-6">
         <button onClick={() => { setMenuOpen(false); onNavigate('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex flex-col gap-px">
           <span className="font-serif text-[17px] font-bold tracking-[1.6px] text-halo-dark leading-none">
             HALO ATELIER
